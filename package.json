@@ -1,0 +1,21 @@
+{
+  "name": "cevichochos_de_la_veci",
+  "version": "1.0.0",
+  "description": "Productos para pagina Cevichochos",
+  "main": "index.js",
+  "scripts": {
+    "start": "node api/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:JohanDs1/cevichochosDeLaVeci.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "json-serve": "^0.1.0",
+    "json-server": "^0.17.3"
+  }
+}

@@ -1,0 +1,46 @@
+{
+    "productos": [
+        {
+            "id": "1",
+            "nombre": "Mote con Chicharron Completo",
+            "imagenProducto": "assets/img/productos/moteConChicharron_sinFondo.png",
+            "descripcion": "Mote chicharrón fritada cuero reventado chifles y tostado",
+            "precio": "1.50"
+        },
+        {
+            "id": "2",
+            "nombre": "Mixto Completo",
+            "imagenProducto": "assets/img/productos/mixtoCompleto_sinFondo.png",
+            "descripcion": "Chochos tostado chifles canguil cuero pollo y oreja",
+            "precio": "2.00"
+        },
+        {
+            "id": "3",
+            "nombre": "Ceviche de Pollo",
+            "imagenProducto": "assets/img/productos/cevichochoDePollo_sinFondo.png",
+            "descripcion": "Chochos tostado chifles canguil y pollo",
+            "precio": "2.00"
+        },
+        {
+            "id": "4",
+            "nombre": "Ceviche de cuero",
+            "imagenProducto": "assets/img/productos/cevicheDeCuero_sinFondo.png",
+            "descripcion": "Chochos tostado chifles canguil y cuero",
+            "precio": "2.00"
+        },
+        {
+            "id": "5",
+            "nombre": "Ceviche de oreja ",
+            "imagenProducto": "assets/img/productos/cevicheDeOreja_sinFondo.png",
+            "descripcion": "Chochos tostado chifles canguil y oreja",
+            "precio": "2.00"
+        },
+        {
+            "id": "6",
+            "nombre": "Mote Normal",
+            "imagenProducto": "assets/img/productos/moteNormal_sinFondo.png",
+            "descripcion": "Mote chicharrón fritada y tostado",
+            "precio": "2.00"
+        }
+    ]
+}
