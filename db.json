@@ -1,46 +1,78 @@
 {
+    "categorias": [
+        {
+            "id": "1",
+            "nombre": "Mote"
+        },
+        {
+            "id": "2",
+            "nombre": "Bebidas"
+        }
+    ],
     "productos": [
         {
             "id": "1",
             "nombre": "Mote con Chicharron Completo",
             "imagenProducto": "assets/img/productos/moteConChicharron_sinFondo.png",
             "descripcion": "Mote chicharrón fritada cuero reventado chifles y tostado",
-            "precio": "1.50"
+            "precio": "1.50",
+            "categoria": "1"
         },
         {
             "id": "2",
             "nombre": "Mixto Completo",
             "imagenProducto": "assets/img/productos/mixtoCompleto_sinFondo.png",
             "descripcion": "Chochos tostado chifles canguil cuero pollo y oreja",
-            "precio": "2.00"
+            "precio": "2.00",
+            "categoria": "1"
         },
         {
             "id": "3",
             "nombre": "Ceviche de Pollo",
             "imagenProducto": "assets/img/productos/cevichochoDePollo_sinFondo.png",
             "descripcion": "Chochos tostado chifles canguil y pollo",
-            "precio": "2.00"
+            "precio": "2.00",
+            "categoria": "1"
         },
         {
             "id": "4",
             "nombre": "Ceviche de cuero",
             "imagenProducto": "assets/img/productos/cevicheDeCuero_sinFondo.png",
             "descripcion": "Chochos tostado chifles canguil y cuero",
-            "precio": "2.00"
+            "precio": "2.00",
+            "categoria": "1"
         },
         {
             "id": "5",
             "nombre": "Ceviche de oreja ",
             "imagenProducto": "assets/img/productos/cevicheDeOreja_sinFondo.png",
             "descripcion": "Chochos tostado chifles canguil y oreja",
-            "precio": "2.00"
+            "precio": "2.00",
+            "categoria": "1"
         },
         {
             "id": "6",
             "nombre": "Mote Normal",
             "imagenProducto": "assets/img/productos/moteNormal_sinFondo.png",
             "descripcion": "Mote chicharrón fritada y tostado",
-            "precio": "2.00"
+            "precio": "2.00",
+            "categoria": "1"
+        },
+        {
+            "id": "7",
+            "nombre": "Bebida Guayusa",
+            "imagenProducto": "assets/img/productos/guayusa_sinFondo.png",
+            "descripcion": "Bebida Guayusa",
+            "precio": "3.00",
+            "categoria": "2"
+        },
+        {
+            "id": "8",
+            "nombre": "Bebida Jamaica",
+            "imagenProducto": "assets/img/productos/jamaica_sinFondo.png",
+            "descripcion": "Bebida Jamaica",
+            "precio": "2.50",
+            "categoria": "2"
         }
     ]
 }
