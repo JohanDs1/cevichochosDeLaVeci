@@ -9,14 +9,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:JohanDs1/cevichochosDeLaVeci.git"
+    "url": "git+ssh://git@github.com/JohanDs1/cevichochosDeLaVeci.git"
   },
   "author": "",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/JohanDs1/cevichochosDeLaVeci#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "formidable": "^3.5.1",
     "json-serve": "^0.1.0",
-    "json-server": "^0.17.3"
+    "json-server": "^0.17.3",
+    "sharp": "^0.33.4"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/JohanDs1/cevichochosDeLaVeci/issues"
   }
 }
