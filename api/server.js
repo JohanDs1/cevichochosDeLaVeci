@@ -1,10 +1,9 @@
-// See https://github.com/typicode/json-server#module
-const jsonServer = require('json-server')
-const server = jsonServer.create()
-const router = jsonServer.router('db.json')
-const middlewares = jsonServer.defaults()
+const jsonServer = require('json-server');
+const server = jsonServer.create();
+const router = jsonServer.router('db.json');
+const middlewares = jsonServer.defaults();
 
-server.use(middlewares)
+server.use(middlewares);
 
 // Add this before server.use(router)
 server.use((req, res, next) => {
@@ -13,22 +12,30 @@ server.use((req, res, next) => {
   next();
 });
 
+// Handle custom routes
 server.use(jsonServer.rewriter({
   '/api/*': '/$1',
-  '/productos/:resource/:id/show': '/:resource/:id'
-}))
+  '/productos/:resource/:id/show': '/:resource/:id',
+  '/sugerencias/:resource/:id/show': '/:resource/:id'
+}));
 
-// Agrega la ruta para manejar la solicitud POST a /usuarios
+// Add this route for handling POST requests to /usuarios
 server.post('/usuarios', (req, res) => {
   const nuevoUsuario = req.body;
-  router.db.usuarios.push(nuevoUsuario);
-  res.json(nuevoUsuario);
+  const db = router.db; // Access the lowdb instance
+
+  // Ensure 'usuarios' is an array
+  if (!Array.isArray(db.get('usuarios').value())) {
+    db.set('usuarios', []).write();
+  }
+
+  db.get('usuarios').push(nuevoUsuario).write();
+  res.status(201).json(nuevoUsuario);
 });
 
-server.use(router)
+server.use(router);
 server.listen(3000, () => {
-  console.log('JSON Server is running')
-})
+  console.log('JSON Server is running');
+});
 
-// Export the Server API
-module.exports = server
+module.exports = server;
