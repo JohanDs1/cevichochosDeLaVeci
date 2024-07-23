@@ -13,8 +13,7 @@
       "email": "mario@gmail.com",
       "password": "Mario3579",
       "role": "cliente"
-    },
-    null
+    }
   ],
   "sugerencias": [
     {
@@ -23,6 +22,20 @@
       "apellido": "Perez",
       "email": "mario@gmail.com",
       "mensaje": "Hola me gustaria recomendar sus productos"
+    },
+    {
+      "id": "a2d8ffbc-4e4b-459f-b6d5-804ad0cae126",
+      "nombre": "Juan",
+      "apellido": "Demetre",
+      "email": "juanito.de23@gmail.com",
+      "mensaje": "Buenas tardes me gustaria saber si por si acaso vende los cevichochos por Quito o tiene algun otro carrito por aqui?"
+    },
+    {
+      "id": "8cd953c8-a904-46f4-b3f3-d4537a268f28",
+      "nombre": "Karla",
+      "apellido": "Marin",
+      "email": "marinKar@gmail.com",
+      "mensaje": "Me gustaria mencionar que su servicio es excelente y la señora que atiende muy amable"
     }
   ],
   "categorias": [
