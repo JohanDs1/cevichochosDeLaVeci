@@ -21,31 +21,16 @@ server.use(jsonServer.rewriter({
 
 // Add this route for handling POST requests to /usuarios
 server.post('/usuarios', (req, res) => {
-  console.log('Solicitud POST recibida en /usuarios');
-  console.log('Datos recibidos:', req.body);
+  const nuevoUsuario = req.body;
+  const db = router.db; // Access the lowdb instance
 
-  try {
-    const nuevoUsuario = req.body;
-    const db = router.db;
-
-    // Ensure 'usuarios' is an array
-    if (!Array.isArray(db.get('usuarios').value())) {
-      db.set('usuarios', []).write();
-    }
-
-    // Check that all required fields are present
-    if (!nuevoUsuario.id || !nuevoUsuario.nombre || !nuevoUsuario.email || !nuevoUsuario.password || !nuevoUsuario.role) {
-      return res.status(400).json({ error: 'Datos incompletos' });
-    }
-
-    // Add the new user to the database
-    db.get('usuarios').push(nuevoUsuario).write();
-    res.status(201).json(nuevoUsuario);
-    console.log('Usuario registrado:', nuevoUsuario);
-  } catch (error) {
-    console.error('Error al registrar el usuario:', error);
-    res.status(500).json({ error: 'Hubo un error al registrar el usuario' });
+  // Ensure 'usuarios' is an array
+  if (!Array.isArray(db.get('usuarios').value())) {
+    db.set('usuarios', []).write();
   }
+
+  db.get('usuarios').push(nuevoUsuario).write();
+  res.status(201).json(nuevoUsuario);
 });
 
 server.use(router);
