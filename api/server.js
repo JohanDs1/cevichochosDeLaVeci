@@ -16,7 +16,9 @@ server.use((req, res, next) => {
 server.use(jsonServer.rewriter({
   '/api/*': '/$1',
   '/productos/:resource/:id/show': '/:resource/:id',
-  '/sugerencias/:resource/:id/show': '/:resource/:id'
+  '/categorias/:resource/:id/show': '/:resource/:id',
+  '/sugerencias/:resource/:id/show': '/:resource/:id',
+  '/usuarios/:resource/:id/show': '/:resource/:id'
 }));
 
 // Add this route for handling POST requests to /usuarios
